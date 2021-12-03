@@ -76,3 +76,15 @@
 // const b = process.argv[4]
 
 // calculator(operation, a, b)
+
+const movies = require('./activity.js')
+const songs = require('./activity.js')
+const food = require('./activity.js')
+
+const display = arr => {
+  arr.forEach(elem => console.log(elem))
+}
+
+console.log(movies)
+console.log(songs)
+console.log(food)
