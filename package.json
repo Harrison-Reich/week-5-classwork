@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "axios": "^0.24.0",
+    "inquirer": "^8.2.0",
+    "prompt-choices": "^4.0.6"
+  }
+}
