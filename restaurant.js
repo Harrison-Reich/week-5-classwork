@@ -36,7 +36,7 @@ class Drinks {
 Size: ${this.size}
 Type: ${this.type}
 Brand: ${this.brand}
-Price: ${drink.price}
+Price: ${this.drinkPrice}
   `)
   }
 }
