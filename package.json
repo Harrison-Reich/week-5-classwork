@@ -1,7 +1,23 @@
 {
-  "dependencies": {
-    "axios": "^0.24.0",
-    "inquirer": "^8.2.0",
-    "prompt-choices": "^4.0.6"
+  "name": "12-08-21",
+  "version": "1.0.0",
+  "description": "- Intro to Testing\r - Intro to Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QFults/12-08-21.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QFults/12-08-21/issues"
+  },
+  "homepage": "https://github.com/QFults/12-08-21#readme",
+  "devDependencies": {
+    "jest": "^27.4.3"
   }
 }
