@@ -33,7 +33,7 @@ axios.get('/games')
   })
   .catch(err => console.error(err))
 
-axios.get('/tvshow')
+axios.get('/tvshows')
   .then(res => {
     const tvshow = res.data
 

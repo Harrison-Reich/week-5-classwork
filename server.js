@@ -72,7 +72,7 @@ app.get('/games', (req, res) => {
   //   res.send('Madden, League of Legends, Call of Duty')
 })
 
-app.get('/tvshow', (req, res) => {
+app.get('/tvshows', (req, res) => {
   res.json(watch)
   // res.sendFile(path.join(__dirname, 'example', 'tvshow.html'))
   // res.send('Arcane, The Witcher, Family Guy')
