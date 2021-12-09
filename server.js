@@ -21,13 +21,13 @@ const sound = {
 
 const play = {
   name: 'Madden',
-  team: 'Broncos'
+  team: 'Denver Broncos'
 }
 
 const watch = {
   channel: 49,
   genre: 'comedy',
-  length: 45
+  duration: 45
 }
 
 app.use(express.static(path.join(__dirname, 'public')))
@@ -55,25 +55,25 @@ app.get('/', (req, res) => {
 })
 
 app.get('/food', (req, res) => {
-  // res.json(eat)
+  res.json(eat)
   // res.sendFile(path.join(__dirname, 'example', 'food.html'))
   // res.send('pancakes, pizza, tacos, salmon')
 })
 
 app.get('/music', (req, res) => {
-  // res.json(sound)
+  res.json(sound)
   // res.sendFile(path.join(__dirname, 'example', 'music.html'))
   //   res.send('Strait Outta Tottenham, Damn, Racks, Too Eazy')
 })
 
 app.get('/games', (req, res) => {
-  // res.json(play)
+  res.json(play)
   // res.sendFile(path.join(__dirname, 'example', 'games.html'))
   //   res.send('Madden, League of Legends, Call of Duty')
 })
 
 app.get('/tvshow', (req, res) => {
-  // res.json(watch)
+  res.json(watch)
   // res.sendFile(path.join(__dirname, 'example', 'tvshow.html'))
   // res.send('Arcane, The Witcher, Family Guy')
 })
