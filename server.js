@@ -4,31 +4,31 @@ const { rsort } = require('semver')
 
 const app = express()
 
-// objects
-// const home = {
-//   name: 'Homepage',
-//   purpose: 'Starting location to website'
-// }
-// const eat = {
-//   taste: 10,
-//   quality: 'fresh'
-// }
+objects
+const home = {
+  name: 'Homepage',
+  purpose: 'Starting location to website'
+}
+const eat = {
+  taste: 10,
+  quality: 'fresh'
+}
 
-// const sound = {
-//   Genre: 'rap',
-//   City: 'Los Angeles'
-// }
+const sound = {
+  Genre: 'rap',
+  City: 'Los Angeles'
+}
 
-// const play = {
-//   name: 'Madden',
-//   team: 'Broncos'
-// }
+const play = {
+  name: 'Madden',
+  team: 'Broncos'
+}
 
-// const watch = {
-//   channel: 49,
-//   genre: 'comedy',
-//   length: 45
-// }
+const watch = {
+  channel: 49,
+  genre: 'comedy',
+  length: 45
+}
 
 app.use(express.static(path.join(__dirname, 'public')))
 
