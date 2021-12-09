@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Harrison-Reich/week-5-classwork#readme",
   "dependencies": {
+    "axios": "^0.24.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
