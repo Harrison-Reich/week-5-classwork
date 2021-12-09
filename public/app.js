@@ -1,46 +1,46 @@
 console.log('Hello World!')
 
-axios.get('/eat')
+axios.get('/food')
   .then(res => {
-    const dog = res.data
-    
+    const food = res.data
+
     document.getElementById('eat').innerHTML = `
-      <h1>${eat.taste}</h1>
-      <h2>${eat.quality}</h2>
+      <h1>${food.taste}</h1>
+      <h2>${food.quality}</h2>
     `
   })
   .catch(err => console.error(err))
-  
-axios.get('/sound')
+
+axios.get('/music')
   .then(res => {
-    const dog = res.data
-    
+    const music = res.data
+
     document.getElementById('sound').innerHTML = `
-      <h1>${sound.Genre}</h1>
-      <h2>${sound.City}</h2>
+      <h1>${music.Genre}</h1>
+      <h2>${music.City}</h2>
     `
   })
   .catch(err => console.error(err))
 
-axios.get('/play')
+axios.get('/games')
   .then(res => {
-    const dog = res.data
-    
+    const games = res.data
+
     document.getElementById('play').innerHTML = `
-      <h1>${play.name}</h1>
-      <h2>${play.team}</h2>
+      <h1>${games.name}</h1>
+      <h2>${games.team}</h2>
     `
   })
   .catch(err => console.error(err))
 
-axios.get('/watch')
+axios.get('/tvshow')
   .then(res => {
-    const dog = res.data
-    
+    const tvshow = res.data
+
     document.getElementById('watch').innerHTML = `
-    <h1>${watch.channel}</h1>
-    <h2>${watch.genre}</h2>
-    <h3>${watch.duration}</h3>
+    <h1>${tvshow.channel}</h1>
+    <h2>${tvshow.genre}</h2>
+    <h3>${tvshow.duration}</h3>
     `
   })
   .catch(err => console.error(err))
