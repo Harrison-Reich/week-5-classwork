@@ -1,30 +1,62 @@
 const express = require('express')
 const path = require('path')
+const { rsort } = require('semver')
 
 const app = express()
 
+// objects
+const home = {
+  name: 'Homepage',
+  purpose: 'Starting location to website'
+}
+const eat = {
+  taste: 10,
+  quality: 'fresh'
+}
+
+const sound = {
+  Genre: 'rap',
+  City: 'Los Angeles'
+}
+
+const play = {
+  name: 'Madden',
+  team: 'Broncos'
+}
+
+const watch = {
+  channel: 49,
+  genre: 'comedy',
+  length: 45
+}
+
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'example', 'index.html'))
-//   res.send('<h1>Harrison Reich Local Server!</h1>')
-// })
+  res.json(home)
+  // res.sendFile(path.join(__dirname, 'example', 'index.html'))
+  //   res.send('<h1>Harrison Reich Local Server!</h1>')
+})
 
 app.get('/food', (req, res) => {
-  res.sendFile(path.join(__dirname, 'example', 'food.html'))
+  res.json(eat)
+  // res.sendFile(path.join(__dirname, 'example', 'food.html'))
   // res.send('pancakes, pizza, tacos, salmon')
 })
 
 app.get('/music', (req, res) => {
-  res.sendFile(path.join(__dirname, 'example', 'music.html'))
-//   res.send('Strait Outta Tottenham, Damn, Racks, Too Eazy')
-// })
+  res.json(sound)
+  // res.sendFile(path.join(__dirname, 'example', 'music.html'))
+  //   res.send('Strait Outta Tottenham, Damn, Racks, Too Eazy')
+})
 
 app.get('/games', (req, res) => {
-  res.sendFile(path.join(__dirname, 'example', 'games.html'))
-//   res.send('Madden, League of Legends, Call of Duty')
-// })
+  res.json(play)
+  // res.sendFile(path.join(__dirname, 'example', 'games.html'))
+  //   res.send('Madden, League of Legends, Call of Duty')
+})
 
 app.get('/tvshow', (req, res) => {
-  res.sendFile(path.join(__dirname, 'example', 'tvshow.html'))
+  res.json(watch)
+  // res.sendFile(path.join(__dirname, 'example', 'tvshow.html'))
   // res.send('Arcane, The Witcher, Family Guy')
 })
 
