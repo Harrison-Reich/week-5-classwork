@@ -7,19 +7,19 @@ app.get('/', (req, res) => {
 })
 
 app.get('/food', (req, res) => {
-  res.send('<h1>This is my foods page!</h1>')
+  res.send('pancakes, pizza, tacos, salmon')
 })
 
 app.get('/music', (req, res) => {
-  res.send('<h1>These are my favorite songs page!</h1>')
+  res.send('Strait Outta Tottenham, Damn, Racks, Too Eazy')
 })
 
 app.get('/games', (req, res) => {
-  res.send('<h1>This is my games page!</h1>')
+  res.send('Madden, League of Legends, Call of Duty')
 })
 
 app.get('/tvshow', (req, res) => {
-  res.send('<h1>This is my tv shows page!</h1>')
+  res.send('Arcane, The Witcher, Family Guy')
 })
 
 app.listen(3001)
