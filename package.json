@@ -1,4 +1,26 @@
 {
+  "name": "week-5-classwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harrison-Reich/week-5-classwork.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Harrison-Reich/week-5-classwork/issues"
+  },
+  "homepage": "https://github.com/Harrison-Reich/week-5-classwork#readme",
   "dependencies": {
     "express": "^4.17.1"
   }
