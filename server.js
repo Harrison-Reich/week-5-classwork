@@ -4,7 +4,7 @@ const { rsort } = require('semver')
 
 const app = express()
 
-objects
+// objects
 const home = {
   name: 'Homepage',
   purpose: 'Starting location to website'
@@ -78,5 +78,5 @@ app.get('/tvshow', (req, res) => {
   // res.send('Arcane, The Witcher, Family Guy')
 })
 
-app.listen(3001)
+app.listen(3000)
 
