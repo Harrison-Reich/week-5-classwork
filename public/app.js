@@ -35,12 +35,12 @@ axios.get('/games')
 
 axios.get('/tvshows')
   .then(res => {
-    const tvshow = res.data
+    const tvshows = res.data
 
     document.getElementById('watch').innerHTML = `
-    <h1>${tvshow.channel}</h1>
-    <h2>${tvshow.genre}</h2>
-    <h3>${tvshow.duration}</h3>
+    <h1>${watch.channel}</h1>
+    <h2>${watch.genre}</h2>
+    <h3>${watch.duration}</h3>
     `
   })
   .catch(err => console.error(err))
